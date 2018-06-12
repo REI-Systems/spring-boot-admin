@@ -24,7 +24,7 @@ COPY . /usr/src/spring_boot_admin
 WORKDIR /usr/src/spring_boot_admin
 
 # Create mvn package
-RUN mvn package
+RUN mvn package -DskipTests
 
 RUN cp target/spring-boot-admin-0.0.1-SNAPSHOT.jar target/app.jar
 
