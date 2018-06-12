@@ -26,7 +26,7 @@ WORKDIR /usr/src/springadmindemo
 # Create mvn package
 RUN mvn package
 
-RUN cp target/spring-boot-admin-0.0.1-*.jar target/app.jar
+RUN cp target/spring-boot-admin-0.0.1-SNAPSHOT.jar target/app.jar
 
 # launch the Spring Boot application
 CMD java -Djava.security.egd=file:/dev/./urandom -Xmx512m -jar target/app.jar
