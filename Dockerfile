@@ -20,8 +20,8 @@ ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 ARG BUILD_NUMBER
 
 # Set the working directory of the container
-COPY . /usr/src/springadmindemo
-WORKDIR /usr/src/springadmindemo
+COPY . /usr/src/spring_boot_admin
+WORKDIR /usr/src/spring_boot_admin
 
 # Create mvn package
 RUN mvn package
